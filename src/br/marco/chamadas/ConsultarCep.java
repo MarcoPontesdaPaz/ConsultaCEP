@@ -34,12 +34,8 @@ public class ConsultarCep {
                 } else {
 
                     String jsonBody = response.body();
-
                     Gson gson = new Gson();
                     cep = gson.fromJson(jsonBody, CEP.class);
-
-                    System.out.printf ("CEP == %s", cep);
-                    //System.out.println(jsonBody);
 
                 }
 

@@ -28,7 +28,11 @@ public class Main {
                 ConsultarCep consultarCep = new ConsultarCep();
                 CEP cep = consultarCep.consultar(cepConsulta);
 
-                System.out.println(cep);
+                if (cep.getCep().length() == 0) {
+                    System.out.println("CEP inexistente");
+                } else {
+                    System.out.println("CEP " + cep);
+                }
             }
         }
     }

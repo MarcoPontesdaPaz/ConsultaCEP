@@ -39,9 +39,7 @@ public class ConsultarCep {
 
                 }
 
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            } catch (InterruptedException e) {
+            } catch (IOException | InterruptedException e) {
                 System.out.println(e.getMessage());
             }
         }

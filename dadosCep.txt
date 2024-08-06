@@ -1,0 +1,3 @@
+ CEP{cep='26215-532', logradouro='Avenida Doutor Luiz Guimarães', complemento='de 312 ao fim - lado par', unidade='', bairro='Centro', localidade='Nova Iguaçu', uf='RJ', ibge='3303500', gia='', ddd='21', siaf=''}
+ CEP{cep='26580-370', logradouro='Rua Oswaldo Prado', complemento='', unidade='', bairro='Vila Emil', localidade='Mesquita', uf='RJ', ibge='3302858', gia='', ddd='21', siaf=''}
+ CEP{cep='20520-060', logradouro='Rua Moura Brito', complemento='', unidade='', bairro='Tijuca', localidade='Rio de Janeiro', uf='RJ', ibge='3304557', gia='', ddd='21', siaf=''}

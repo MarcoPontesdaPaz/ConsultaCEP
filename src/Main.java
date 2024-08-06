@@ -1,4 +1,5 @@
 import br.marco.chamadas.ConsultarCep;
+import br.marco.chamadas.GravadorDeArquivo;
 import br.marco.modelos.CEP;
 //import com.google.gson.FieldNamingPolicy;
 //import com.google.gson.Gson;
@@ -16,6 +17,8 @@ public class Main {
     public static void main(String[] args) {
 
         String cepConsulta;
+        GravadorDeArquivo gravador = new GravadorDeArquivo();
+        gravador.open("arquivoDeCEPs.txt");
 
         while (true) {
 
@@ -32,9 +35,12 @@ public class Main {
                     System.out.println("CEP inexistente");
                 } else {
                     System.out.println("CEP " + cep);
+                    gravador.write(cep);
                 }
             }
         }
+
+        gravador.close();
     }
 
     public static String lerCEP () {

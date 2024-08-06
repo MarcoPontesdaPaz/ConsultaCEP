@@ -28,6 +28,7 @@ public class ConsultarCep {
                 HttpClient client = HttpClient.newHttpClient();
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                //HttpResponse<CEP> response = client.send(request, CEP.class);
 
                 if (response.statusCode() == 400) {
                     System.out.println("CEP inexistente !");

@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String cepConsulta = new String ("");
+        String cepConsulta;
 
         while (true) {
 
@@ -28,7 +28,7 @@ public class Main {
                 ConsultarCep consultarCep = new ConsultarCep();
                 CEP cep = consultarCep.consultar(cepConsulta);
 
-                if (cep.getCep().length() == 0) {
+                if (cep.getCep().isEmpty()) {
                     System.out.println("CEP inexistente");
                 } else {
                     System.out.println("CEP " + cep);
@@ -40,7 +40,7 @@ public class Main {
     public static String lerCEP () {
 
         Scanner leitor = new Scanner (System.in);
-        String cep = new String ();
+        String cep;
 
         System.out.printf("Digite um CEP :");
         cep =  leitor.nextLine();
